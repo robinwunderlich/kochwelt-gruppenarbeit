@@ -92,6 +92,13 @@ body {
     border-radius: 4px;
 }
 
+.btn-primary:hover {
+    background: #78e215;
+    color: #135713;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 0 10px rgba(120, 226, 21, 0.6), 0 0 20px rgba(120, 226, 21, 0.3);
+}
+
 /* --- SEKTION 2: Lust auf was Neues? --- */
 .recipe-suggestions {
     background-color: #f3f3f3;
