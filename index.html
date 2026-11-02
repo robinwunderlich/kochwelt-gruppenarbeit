@@ -1,69 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="main-header">
-        <img src="img/logo.png" alt="Logo" class="logo-img">
+      <img src="img/logo.png" alt="Logo" class="logo-img" />
 
-        <nav class="navigation">
-            <a href="#" class="nav-link">Start</a>
-            <a href="#" class="nav-link active">Rezept des Tages</a>
-            <a href="#" class="nav-link">Kontakt</a>
-            <a href="#" class="nav-link">Impressum</a>
-        </nav>
+      <nav class="navigation">
+        <a href="#" class="nav-link">Start</a>
+        <a href="#" class="nav-link active">Rezept des Tages</a>
+        <a href="#" class="nav-link">Kontakt</a>
+        <a href="#" class="nav-link">Impressum</a>
+      </nav>
     </header>
-
+    <section class="hero">
+        <img src="./img/croissant.jpg"
+      class="hero-image"
+      alt="Croissants ungebacken">
+      <div class="hero-text">
+        <h1>Französische Croissants</h1>
+        <p class="hero-description">
+          Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
+          werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück
+          zaubern.
+        </p>
+        <a href="#" class="hero-button">Rezept öffnen</a>
+      </div>
+    </section>
     <!-- SEKTION 2: Empfehlungen / Neue Rezepte -->
     <section class="recipe-suggestions">
-        <div class="container">
-            <h2>Lust auf was Neues?</h2>
-            <div class="grid-suggestions">
-                <!-- Karte 1 -->
-                <div class="card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <p>Frische Croissants</p>
-                </div>
-                <!-- Karte 2 -->
-                <div class="card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <p>Frische Croissants</p>
-                </div>
-                <!-- Karte 3 -->
-                <div class="card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <p>Frische Croissants</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Lust auf was Neues?</h2>
+        <div class="grid-suggestions">
+          <!-- Karte 1 -->
+          <div class="card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <p>Frische Croissants</p>
+          </div>
+          <!-- Karte 2 -->
+          <div class="card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <p>Frische Croissants</p>
+          </div>
+          <!-- Karte 3 -->
+          <div class="card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <p>Frische Croissants</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SEKTION 3: Vergleichsartikel -->
-<section class="article-comparison">
-    <div class="container">
+    <section class="article-comparison">
+      <div class="container">
         <h2>Pfanne vs. Wok - Was ist besser?</h2>
         <div class="article-layout">
-            <div class="article-text">
-                <p>odkfoodkfokdokfodkofkd kodfkodkofkod kofdkofkodkfdk ko kdofko dofk okfodk fodkook  kodfkodkof okfodkfodkfo kodkfodkfo.</p>
-            </div>
-            <div class="article-image">
-                <img src="img/wok.jpg" alt="Frisches Gemüse im Wok">
-            </div>
+          <div class="article-text">
+            <p>
+              odkfoodkfokdokfodkofkd kodfkodkofkod kofdkofkodkfdk ko kdofko dofk
+              okfodk fodkook kodfkodkof okfodkfodkfo kodkfodkfo.
+            </p>
+          </div>
+          <div class="article-image">
+            <img src="img/wok.jpg" alt="Frisches Gemüse im Wok" />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <footer>
-        <p>AGB&Datenschutz</p>
+      <p>AGB&Datenschutz</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
