@@ -54,44 +54,6 @@ body {
     padding: 40px 20px;
 }
 
-/* --- SEKTION 1: Rezept des Tages --- */
-.recipe-featured .container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.recipe-featured .recipe-image,
-.recipe-featured .recipe-content {
-    flex: 1;
-}
-
-.recipe-featured .recipe-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.recipe-featured h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.recipe-featured p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #008000;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-}
-
 /* --- SEKTION 2: Lust auf was Neues? --- */
 .recipe-suggestions {
     background-color: #f3f3f3;
