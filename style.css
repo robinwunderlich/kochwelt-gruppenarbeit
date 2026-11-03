@@ -58,9 +58,6 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  padding-left: 120px;
-  padding-right: 120px;
-  min-height: calc(100vh - 100px);
 }
 
 .hero img {
@@ -69,32 +66,28 @@ body {
 }
 
 .hero-text {
-padding-left: 30px;
-margin-bottom: 70px;
-}
-
-.hero-text p {
-    width: 600px;
+  padding-left: 30px;
+  margin-bottom: 70px;
 }
 
 .hero-text h1 {
-    
+  font-size: 28px;
 }
 
 .hero-description {
-    margin-bottom: 140px;
-    font-size: 18px;
+  margin-bottom: 140px;
+  font-size: 14px;
 }
 
 .hero-button {
-    color: white;
-    background-color: #008000;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 14px;
+  color: white;
+  background-color: #008000;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
 }
 
 /* --- SEKTION 2: Lust auf was Neues? --- */
