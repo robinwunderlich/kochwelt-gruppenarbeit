@@ -1,1 +1,39 @@
+.recipe-meta,
+.prep-meta {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+}
 
+.recipe-meta span,
+.prep-meta strong {
+    margin-right: 5px;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients li {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.instructions {
+    font-size: 14px;
+    text-align: justify;
+    color: #444444;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    font-size: 14px;
+}
