@@ -1,118 +1,134 @@
 body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color: #ffffff;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #ffffff;
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.28) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.28) !important;
 
-    position: relative;
-    z-index: 100;
+  position: relative;
+  z-index: 100;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333333;
 }
 
 .navigation {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #666666;
-    font-size: 14px;
-    padding: 8px 0;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  padding: 8px 0;
+  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: #2b7a4b;
+  color: #2b7a4b;
 }
 
 .nav-link.active {
-    color: #2b7a4b;
-    font-weight: bold;
-    border-bottom: 3px solid #2b7a4b;
+  color: #2b7a4b;
+  font-weight: bold;
+  border-bottom: 3px solid #2b7a4b;
 }
 
 /* Euer Teil */
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* --- SEKTION 1: Hero --- */
+.hero {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  min-height: calc(100vh - 100px);
+}
+
+.hero img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.hero-text {
+padding-left: 30px;
+margin-bottom: 200px;
 }
 
 /* --- SEKTION 2: Lust auf was Neues? --- */
 .recipe-suggestions {
-    background-color: #f3f3f3;
-    text-align: center;
+  background-color: #f3f3f3;
+  text-align: center;
 }
 
 .recipe-suggestions h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .grid-suggestions {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .grid-suggestions .card {
-    flex: 1;
+  flex: 1;
 }
 
 .grid-suggestions .card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /* --- SEKTION 3: Pfanne vs. Wok --- */
 .article-comparison h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .article-layout {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .article-text {
-    flex: 2;
+  flex: 2;
 }
 
 .article-image {
-    flex: 1;
+  flex: 1;
 }
 
 .article-image img {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
-
-
-
 footer {
-    padding: 40px;
-    background: #444;
-    color: #ccc;
-    text-align: center;
+  padding: 40px;
+  background: #444;
+  color: #ccc;
+  text-align: center;
 }
