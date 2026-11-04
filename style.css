@@ -101,56 +101,63 @@ body {
     box-shadow: 0 0 10px rgba(120, 226, 21, 0.6), 0 0 20px rgba(120, 226, 21, 0.3);
 }
 
-/* --- SEKTION 2: Lust auf was Neues? --- */
-.recipe-suggestions {
-    background-color: #f3f3f3;
-    text-align: center;
+.more-recipes {
+    background-color: #eee;
+    padding-bottom: 60px;
 }
 
-.recipe-suggestions h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.grid-suggestions {
+.recipe-cards {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 
-.grid-suggestions .card {
-    flex: 1;
-}
-
-.grid-suggestions .card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* --- SEKTION 3: Pfanne vs. Wok --- */
-.article-comparison h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.article-layout {
+.recipe-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 8px;
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recipe-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.article {
+    padding-bottom: 80px;
+}
+
+.article-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
 }
 
-.article-text {
-    flex: 2;
-}
-
-.article-image {
+.article-row p {
     flex: 1;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
 }
 
-.article-image img {
-    width: 100%;
+.article-row img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
