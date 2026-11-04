@@ -4,32 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    
     <header class="main-header">
       <img src="img/logo.png" alt="Logo" class="logo-img" />
-
       <nav class="navigation">
-        <a href="#" class="nav-link">Start</a>
-        <a href="#" class="nav-link">Rezept des Tages</a>
+        <a href="index.html" class="nav-link active">Start</a>
+        <a href="JBs_Rezept.html" class="nav-link">Rezept des Tages</a>
         <a href="#" class="nav-link">Kontakt</a>
         <a href="#" class="nav-link">Impressum</a>
       </nav>
     </header>
+
+    
     <section class="hero container">
-      <img
-        src="./img/Lasagne.jpg"
-        class="hero-image"
-        alt="Lasagne"
-      />
+      <img src="./img/Lasagne.jpg" class="hero-image" alt="Lasagne" />
       <div class="hero-text">
         <h1>Lasagne alla Schmakofatzo</h1>
         <p class="hero-description">
@@ -40,30 +32,29 @@
         <a href="JBs_Rezept.html" class="hero-button">Rezept öffnen</a>
       </div>
     </section>
-    <section class="more-recipes">
-      <div class="section-content">
+
+    
+    <section class="neues">
+      <div class="container">
         <h2>Lust auf was Neues?</h2>
+        <div class="rezepte">
+            
+            <a href="./JBs_Rezept.html" class="rezept-karte">
+                <img src="./img/Lasagne.jpg" alt="Lasagne">
+                <span>Lasagne</span>
+            </a>
 
-            <div class="rezepte">
-                
-                <a href="XXX-link-rezept-1.html" class="rezept-karte">
-                    <img src="./img/Lasagne.jpg" alt="Lasagne">
-                    <span>Lasagne</span>
-                </a>
+            <a href="./RMrezept.html" class="rezept-karte">
+                <img src="./img/cevapcici.jpeg" alt="Cevapcici">
+                <span>Cevapcici</span>
+            </a>
 
-                
-                <a href="XXX-link-rezept-2.html" class="rezept-karte">
-                    <img src="XXX-bild-croissants-2.jpg" alt="Cevapcici">
-                    <span>Cevapcici</span>
-                </a>
-
-                
-                <a href="XXX-link-rezept-3.html" class="rezept-karte">
-                    <img src="XXX-bild-croissants-3.jpg" alt="Quinoa Bowl">
-                    <span>Quinoa Bowl</span>
-                </a>
-            </div>
+            <a href="XXX-link-rezept-3.html" class="rezept-karte">
+                <img src="./img/quinoa-bowl.jpg" alt="Quinoa Bowl">
+                <span>Quinoa Bowl</span>
+            </a>
         </div>
+      </div>
     </section>
 
     
@@ -72,20 +63,18 @@
             <h2>Pfanne vs. Wok - Was ist besser?</h2>
 
             <div class="artikel-inhalt">
-                
+                <a href="XXX-link-pfanne-vs-wok.html" class="artikel-text">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis
                         veritatis aut, nemo dolor tempore, sed necessitatibus voluptate pariatur
                         adipisci incidunt odit, labore ducimus. Repellendus ipsa nobis incidunt odit sint.
                     </p>
                 </a>
-
-                <a href="XXX-link-pfanne-vs-wok.html" class="artikel-bild">
+                <div class="artikel-bild">
                     <img src="./img/wok.jpg" alt="Gemüse im Wok">
-                </a>
+                </div>
             </div>
         </div>
     </section>
-</body>
-
+  </body>
 </html>
