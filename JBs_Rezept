@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="JBs_Rezept.css">
 </head>
 
-
 <body>
 
     <header class="main-header">
@@ -26,100 +25,122 @@
     <article class="recipe">
         <header>
             <h1>Lasange alla Schmakofatzo</h1>
+            <img src="img/Lasagne.jpg" alt="Lasagne" class="banner-img">
             <p class="recipe-meta">
-                <span class="duration"><img src="img/icons/clock-regular.svg" alt="Uhr" width="16" height="16"> 15
-                    Min.</span> |
-                <span class="difficulty"><img src="img/icons/brain-solid.svg" alt="Gehirn" width="16" height="16">
-                    simpel</span> |
-                <span class="date"><img src="img/icons/calendar-alt-regular.svg" alt="Kalender" width="16" height="16">
-                    28.09.2020</span>
+                <span class="duration"><img src="img/icons/clock-regular.svg" alt="Uhr" width="16" height="16"> 15 Min.</span>
+                <span class="difficulty"><img src="img/icons/brain-solid.svg" alt="Gehirn" width="16" height="16"> simpel</span>
+                <span class="date"><img src="img/icons/calendar-alt-regular.svg" alt="Kalender" width="16" height="16"> 28.09.2020</span>
             </p>
         </header>
 
         <section class="ingredients">
-            <h2>Zutaten für</h2> <a href="#" class="btn-primary">4 Portionen</a>
+            <h2>Zutaten für 
+                <input type="number" id="portionsInput" value="4" min="1" class="portions-field"> 
+                <button id="calcBtn" class="btn-primary">Portionen</button>
+            </h2>
+
+            <h3>Für die Bolognese:</h3>
             <ul>
-                <br>
-                <p>Für die Bolognese:</p>
-                <li>1 Zwiebel(n)</li>
-                <li>2 Knoblauchzehe(n)</li>
-                <li>1 Bund Petersilie</li>
-                <li>2 EL Olivenöl</li>
-                <li>500g Hackfleisch, gemischtes</li>
-                <li>1 EL Tomatenmark</li>
-                <li>1 Dose Tomaten, geschälte 800g</li>
+                <li><span class="amount" data-base="1">1</span> Zwiebel(n)</li>
+                <li><span class="amount" data-base="2">2</span> Knoblauchzehe(n)</li>
+                <li><span class="amount" data-base="1">1</span> Bund Petersilie</li>
+                <li><span class="amount" data-base="2">2</span> EL Olivenöl</li>
+                <li><span class="amount" data-base="500">500</span>g Hackfleisch, gemischtes</li>
+                <li><span class="amount" data-base="1">1</span> EL Tomatenmark</li>
+                <li><span class="amount" data-base="1">1</span> Dose Tomaten, geschälte 800g</li>
                 <li>etwas Rotwein</li>
                 <li>Salz und Pfeffer</li>
                 <li>Oregano</li>
-                <br>
-                <p>Für die Béchamelsauce:</p>
-                <li>30g Butter</li>
-                <li>40g Mehl</li>
-                <li>0.5 Liter Milch</li>
-                <li>2 TL Zitronensaft</li>
-                <li>1 Msp. Muskatnuss, frich geriebene</li>
-                <br>
-                <p>Außerdem:</p>
-                <li>300g Lasangeplatte(n)</li>
-                <li>200g Käse, geriebener</li>
-                <li>20g Butterflöckchen</li>
+            </ul>
+
+            <h3>Für die Béchamelsauce:</h3>
+            <ul>
+                <li><span class="amount" data-base="30">30</span>g Butter</li>
+                <li><span class="amount" data-base="40">40</span>g Mehl</li>
+                <li><span class="amount" data-base="0.5">0.5</span> Liter Milch</li>
+                <li><span class="amount" data-base="2">2</span> TL Zitronensaft</li>
+                <li><span class="amount" data-base="1">1</span> Msp. Muskatnuss, frisch geriebene</li>
+            </ul>
+
+            <h3>Außerdem:</h3>
+            <ul>
+                <li><span class="amount" data-base="300">300</span>g Lasagneplatte(n)</li>
+                <li><span class="amount" data-base="200">200</span>g Käse, geriebener</li>
+                <li><span class="amount" data-base="20">20</span>g Butterflöckchen</li>
             </ul>
         </section>
 
         <section class="preparation">
             <h2>Zubereitung</h2>
             <p class="prep-meta">
-                <span class="difficulty"><img src="img/icons/clock-regular.svg" alt="clock" width="16" height="16">
-                    simpel</span> ca. 15 Minuten |
-                <strong>Gesamtzeit:</strong> ca. 15 Minuten
+                <span class="difficulty"><img src="img/icons/clock-regular.svg" alt="clock" width="16" height="16"> ca. 15 Minuten</span>
+                <span class="date"><img src="img/icons/clock-regular.svg" alt="Kalender" width="16" height="16"> Gesamtzeit ca 15min</span>
             </p>
             <p class="instructions">
-                1. Vorbereitung & Bolognese<br><br>
+                <strong>1. Vorbereitung & Bolognese</strong><br><br>
                 • Zwiebel, Knoblauch und Petersilie fein hacken.<br>
                 • Hackfleisch in Olivenöl 5–7 Min. krümelig anbraten.<br>
                 • Zwiebeln 2–3 Min. mitbraten. Knoblauch, Petersilie und Tomatenmark kurz mitrösten.<br>
                 • Tomaten dazugeben, zerdrücken und optional mit Rotwein/Brühe ablöschen.<br>
-                • Würzen & Köcheln: Mit Salz und Pfeffer würzen. Offen 30–40 Min. leise köcheln lassen, dabei regelmäßig
-                umrühren.
+                • Würzen & Köcheln: Mit Salz und Pfeffer würzen. Offen 30–40 Min. leise köcheln lassen, dabei regelmäßig umrühren.
             </p>
             <br>
             <p class="instructions">
-                2. Béchamelsauce<br><br>
+                <strong>2. Béchamelsauce</strong><br><br>
                 • Mehl­schwitze: Butter schmelzen, Mehl einrühren und 1–2 Min. hell anschwitzen.<br>
                 • Milch nach und nach mit dem Schneebesen einrühren.<br>
-                • Köcheln: 8–12 Min. bei kleiner Hitze unter Rühren köcheln. Mit Salz, Pfeffer, Zitronensaft und Muskat
-                abschmecken.
+                • Köcheln: 8–12 Min. bei kleiner Hitze unter Rühren köcheln. Mit Salz, Pfeffer, Zitronensaft und Muskat abschmecken.
             </p>
             <br>
             <p class="instructions">
-            3. Schichten & Backen<br><br>
-            • Ofen vorheizen: Auf 180 °C Ober-/Unterhitze einstellen und Auflaufform fetten.<br>
-            • Schichten: Bolognese \(\rightarrow \) Lasagneplatten \(\rightarrow \) Bolognese \(\rightarrow \)
-            Béchamel. In dieser Reihenfolge wiederholen. Die letzte Schicht muss Béchamelsauce sein.<br>
-            • Topping: Geriebenen Käse und Butterflöckchen darauf verteilen.<br>
-            • Backen: 35–45 Min. goldbraun backen. Vor dem Anschneiden 10–15 Min. ruhen lassen.
+                <strong>3. Schichten & Backen</strong><br><br>
+                • Ofen vorheizen: Auf 180 °C Ober-/Unterhitze einstellen und Auflaufform fetten.<br>
+                • Schichten: Bolognese → Lasagneplatten → Bolognese → Béchamel. In dieser Reihenfolge wiederholen. Die letzte Schicht muss Béchamelsauce sein.<br>
+                • Topping: Geriebenen Käse und Butterflöckchen darauf verteilen.<br>
+                • Backen: 35–45 Min. goldbraun backen. Vor dem Anschneiden 10–15 Min. ruhen lassen.
             </p>
             <br>
             <p class="instructions">
-                💡 Kurzer-Tipp:<br><br>
-                • Vorbereiten: Saucen schmecken am Vortag zubereitet noch besser. Die fertige Lasagne lässt sich auch
-                12–24 Std. ungebacken kaltstellen (Backzeit verlängert sich um 5–10 Min.).<br>
-                • Käse-Schutz: Falls der Käse zu schnell dunkel wird, die Form tiefer in den Ofen schieben oder die
-                letzten 10 Min. mit Alufolie abdecken.
+                💡 <strong>Kurzer-Tipp:</strong><br><br>
+                • Vorbereiten: Saucen schmecken am Vortag zubereitet noch besser. Die fertige Lasagne lässt sich auch 12–24 Std. ungebacken kaltstellen (Backzeit verlängert sich um 5–10 Min.).<br>
+                • Käse-Schutz: Falls der Käse zu schnell dunkel wird, die Form tiefer in den Ofen schieben oder die letzten 10 Min. mit Alufolie abdecken.
             </p>
 
         </section>
 
-        <footer>
-            <p class="author">Rezept erstellt von: <strong>Junus</strong></p>
+        <footer class="recipe-footer">
+            <p>Rezept erstellt von:</p>
+            <div class="author-info">
+                <img src="img/profile.png" alt="Junus" class="profile-img">
+                <strong>Junus</strong>
+            </div>
         </footer>
     </article>
-
-
 
     <footer>
         <p>AGB&Datenschutz</p>
     </footer>
+
+    <script>
+        const input = document.getElementById('portionsInput');
+        const btn = document.getElementById('calcBtn');
+        const amounts = document.querySelectorAll('.amount');
+        const basePortions = 4;
+
+        function calculateIngredients() {
+            const currentPortions = parseFloat(input.value);
+            if (isNaN(currentPortions) || currentPortions <= 0) return;
+
+            amounts.forEach(span => {
+                const baseValue = parseFloat(span.getAttribute('data-base'));
+                const newValue = (baseValue / basePortions) * currentPortions;
+                span.innerText = Number(newValue.toFixed(2));
+            });
+        }
+
+        btn.addEventListener('click', calculateIngredients);
+        input.addEventListener('input', calculateIngredients);
+    </script>
 </body>
 
 </html>
