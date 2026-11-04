@@ -1,69 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="main-header">
-        <img src="img/logo.png" alt="Logo" class="logo-img">
+      <img src="img/logo.png" alt="Logo" class="logo-img" />
 
-        <nav class="navigation">
-            <a href="#" class="nav-link">Start</a>
-            <a href="#" class="nav-link">Rezept des Tages</a>
-            <a href="#" class="nav-link">Kontakt</a>
-            <a href="#" class="nav-link">Impressum</a>
-        </nav>
+      <nav class="navigation">
+        <a href="#" class="nav-link">Start</a>
+        <a href="#" class="nav-link">Rezept des Tages</a>
+        <a href="#" class="nav-link">Kontakt</a>
+        <a href="#" class="nav-link">Impressum</a>
+      </nav>
     </header>
+    <section class="hero container">
+      <img
+        src="./img/Lasagne.jpg"
+        class="hero-image"
+        alt="Lasagne"
+      />
+      <div class="hero-text">
+        <h1>Lasagne alla Schmakofatzo</h1>
+        <p class="hero-description">
+          Eine herzhafte Lasagne mit würziger Bolognese, cremiger Béchamelsauce
+          und goldbraun überbackenem Käse. Mit etwas Geduld zauberst du ein
+          echtes Familienessen, das am nächsten Tag sogar noch besser schmeckt.
+        </p>
+        <a href="JBs_Rezept.html" class="hero-button">Rezept öffnen</a>
+      </div>
+    </section>
+    <section class="more-recipes">
+      <div class="section-content">
+        <h2>Lust auf was Neues?</h2>
 
- <section class="more-recipes">
-        <div class="section-content">
-            <h2>Lust auf was Neues?</h2>
+        <div class="recipe-cards">
+          <a href="rezept.html" class="recipe-card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <span>Frische Croissants</span>
+          </a>
 
-            <div class="recipe-cards">
-                <a href="rezept.html" class="recipe-card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <span>Frische Croissants</span>
-                </a>
+          <a href="rezept.html" class="recipe-card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <span>Frische Croissants</span>
+          </a>
 
-                <a href="rezept.html" class="recipe-card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <span>Frische Croissants</span>
-                </a>
-
-                <a href="rezept.html" class="recipe-card">
-                    <img src="img/croissant.jpg" alt="Frische Croissants">
-                    <span>Frische Croissants</span>
-                </a>
-            </div>
+          <a href="rezept.html" class="recipe-card">
+            <img src="img/croissant.jpg" alt="Frische Croissants" />
+            <span>Frische Croissants</span>
+          </a>
         </div>
+      </div>
     </section>
 
-
     <section class="article">
-        <div class="section-content">
-            <h2>Pfanne vs. Wok - Was ist besser?</h2>
+      <div class="section-content">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
 
-            <div class="article-row">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis veritatis aut,
-                    nemo dolor tempore, sed necessitatibus voluptate pariatur adipisci incidunt odit, labore
-                    ducimus. Repellendus ipsa nobis incidunt odit sint.
-                </p>
-                <img src="img/wok.jpg" alt="Gemüse im Wok">
-            </div>
+        <div class="article-row">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            debitis veritatis aut, nemo dolor tempore, sed necessitatibus
+            voluptate pariatur adipisci incidunt odit, labore ducimus.
+            Repellendus ipsa nobis incidunt odit sint.
+          </p>
+          <img src="img/wok.jpg" alt="Gemüse im Wok" />
         </div>
+      </div>
     </section>
 
     <footer>
-        <p>AGB&Datenschutz</p>
+      <p>AGB&Datenschutz</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
