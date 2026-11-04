@@ -1,7 +1,20 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #ffffff;
+    color: #000;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 32px 0;
 }
 
 .main-header {
@@ -48,125 +61,92 @@ body {
     font-weight: bold;
 }
 
-/* Euer Teil */
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+/* ===== Abschnitt 1: Lust auf was Neues? ===== */
+.neues {
+    background-color: #eeeeee;
+    padding: 40px 0 80px 0;
 }
 
-/* --- SEKTION 1: Rezept des Tages --- */
-.recipe-featured .container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.recipe-featured .recipe-image,
-.recipe-featured .recipe-content {
-    flex: 1;
-}
-
-.recipe-featured .recipe-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.recipe-featured h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.recipe-featured p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #008000;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-}
-
-.btn-primary:hover {
-    background: #78e215;
-    color: #135713;
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 0 10px rgba(120, 226, 21, 0.6), 0 0 20px rgba(120, 226, 21, 0.3);
-}
-
-.more-recipes {
-    background-color: #eee;
-    padding-bottom: 60px;
-}
-
-.recipe-cards {
+.rezepte {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.recipe-card {
+.rezept-karte {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    color: #222;
+    width: 200px;
     text-decoration: none;
-    font-size: 20px;
+    color: #000;
+}
+
+.rezept-karte img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rezept-karte span {
+    margin-top: 4px;
+    font-size: 16px;
     font-weight: 500;
 }
 
-.recipe-card img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.2s;
+/* Hover-Effekt */
+.rezept-karte:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.recipe-card:hover img {
-    transform: scale(1.05);
+.rezept-karte:hover span {
+    color: green;
 }
 
-
-.article {
-    padding-bottom: 80px;
+/* ===== Abschnitt 2: Pfanne vs. Wok ===== */
+.artikel {
+    background-color: #fff;
+    padding: 40px 0 100px 0;
 }
 
-.article-row {
+.artikel-inhalt {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
 }
 
-.article-row p {
+.artikel-text {
     flex: 1;
-    margin-top: 30px;
-    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.artikel-text p {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.2;
 }
 
-.article-row img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+.artikel-text:hover p {
+    color: green;
 }
 
+.artikel-bild img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-
-
-footer {
-    padding: 40px;
-    background: #444;
-    color: #ccc;
-    text-align: center;
+.artikel-bild:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
