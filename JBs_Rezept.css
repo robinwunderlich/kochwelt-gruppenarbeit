@@ -5,9 +5,7 @@ body {
     background-color: #fff;
 }
 
-/* ==========================================================================
-   HEADER BEREICH (EXAKT NACH DEINER VORGABE)
-   ========================================================================== */
+/* HEADER BEREICH  */
 
 .main-header { 
   background-color: #ffffff; 
@@ -50,9 +48,7 @@ body {
   border-bottom: 4px solid green; 
 }
 
-/* ==========================================================================
-   REZEPT LAYOUT & DETAILS
-   ========================================================================== */
+/* REZEPT LAYOUT & DETAILS */
 
 .recipe { 
   background-color: #ffffff; 
@@ -196,9 +192,7 @@ body {
   border: 0;
   border-top: 1px solid #eeeeee;
 }
-/* ==========================================================================
-   ANWEISUNGEN & TEXTE
-   ========================================================================== */
+/* ANWEISUNGEN & TEXTE */
 
 .recipe-preparation h2 {
   font-size: 24px;
@@ -220,9 +214,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* ==========================================================================
-   FOOTER BEREICH (EXAKT NACH DEINER VORGABE)
-   ========================================================================== */
+/* FOOTER BEREICH */
 
 .site-footer {
     background-color: #333030; 
@@ -298,9 +290,7 @@ body {
     color: #8c8c8c;
 }
 
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
+
 
 @media (max-width: 768px) {
     .main-header {
