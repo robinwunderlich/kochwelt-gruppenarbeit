@@ -1,11 +1,13 @@
 .personal-info-section {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background-color: rgb(220, 220, 220, 1);
   border-radius: 10px;
   margin: 300px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .contact-button {
@@ -35,8 +37,8 @@
 }
 
 .personal-info-section h1 {
- margin-top: 0;
- margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .personal-info-section input {
@@ -44,3 +46,21 @@
   border-radius: 10px;
   border-width: 0;
 }
+
+@media (max-width: 768px) {
+  .personal-info-section {
+    margin: 120px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal-info-section {
+    margin: 40px auto;
+  }
+
+  .contact-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
