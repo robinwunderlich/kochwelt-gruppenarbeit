@@ -103,13 +103,11 @@ h2 {
 
 .hero-button {
     display: inline-block;
-    background-color: #2b7a4b;
+    background-color: #008000;
     color: #fff;
     text-decoration: none;
     padding: 12px 24px;
     font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
 }
 
 .hero-button:hover {
