@@ -5,7 +5,6 @@ body {
   background-color: #fff;
 }
 
-/* HEADER BEREICH */
 .main-header {
   background-color: #ffffff;
   display: flex;
@@ -48,7 +47,6 @@ body {
   border-bottom: 3px solid green;
 }
 
-/* REZEPT LAYOUT & DETAILS */
 .recipe {
   background-color: #ffffff;
   max-width: 750px;
@@ -183,7 +181,7 @@ body {
   border-top: 1px solid #eeeeee;
 }
 
-/* ANWEISUNGEN & TEXTE */
+
 .recipe-preparation h2 {
   font-size: 22px;
   margin-top: 20px;
@@ -204,7 +202,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* FOOTER BEREICH */
+
 .site-footer {
   background-color: #333030;
   color: #ffffff;
@@ -217,7 +215,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Mobil untereinander */
+  flex-direction: column; 
   gap: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #4a4747;
@@ -274,7 +272,7 @@ body {
   font-size: 12px;
   color: #8c8c8c;
 }
-/* MEDIA QUERIES FÜR GRÖSSERE BILDSCHIRME (TABLET & DESKTOP) */
+
 @media (min-width: 768px) {
   .main-header {
     padding: 15px 40px 0 40px;

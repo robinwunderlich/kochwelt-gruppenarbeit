@@ -1,224 +1,232 @@
+/* =========================================
+   Kochwelt – gemeinsames Stylesheet
+   (Header, Footer, Startseite)
+   ========================================= */
 
+* {
+    box-sizing: border-box;
+}
 
-body { 
-    margin: 0; 
-    font-family: 'Raleway', sans-serif; 
-    color: #000; 
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
     background-color: #fff;
 }
 
-/* header */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-.main-header { 
-  background-color: #ffffff; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: flex-end; 
-  padding: 15px 40px 0 40px;  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); 
-  margin-bottom: 40px; 
-  position: relative; 
-  z-index: 10;
-} 
+/* ===== Header ===== */
 
-.logo-img { 
-  height: 50px; 
-  width: auto; 
-  margin-bottom: 15px; 
-} 
+/* Inhalt 920px breit + 20px Rand – genau wie .container */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    padding: 0 max(20px, calc((100% - 920px) / 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-link,
+.main-header > .logo-img {
+    align-self: center;
+}
+
+.logo-img {
+    display: block;
+    height: 65px;
+    width: auto;
+}
 
 .navigation {
-  display: flex;
-  align-items: flex-end; 
+    display: flex;
+    gap: 24px;
 }
 
-.navigation .nav-link { 
-  color: #333333; 
-  text-decoration: none; 
-  margin-left: 20px; 
-  font-weight: bold; 
-  font-size: 15px; 
-  padding-bottom: 5px; 
-  line-height: 1; 
-  white-space: nowrap; 
-  border-bottom: 5px solid transparent; 
-  margin-bottom: 0; 
-  transition: color 0.2s ease, border-color 0.2s ease;
-} 
-
-.navigation .nav-link:hover { 
-  color: green; 
-  border-bottom: 4px solid green; 
+.navigation .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 4px solid transparent;
+    white-space: nowrap;
 }
 
+.navigation .nav-link.active {
+    color: #008000;
+    border-bottom-color: #008000;
+}
 
-/* header */
+/* ===== Startseite: Hero ===== */
 
-
-.container { 
-    max-width: 960px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-} 
-
-h2 { 
-    font-size: 24px; 
-    font-weight: 500; 
-    text-align: center; 
-    margin: 0 0 32px 0; 
-} 
-
- 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 40px;
-    padding: 60px 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .hero-image {
-    width: 45%;
-    max-height: 350px;
+    width: min(400px, 45%);
+    height: 266px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .hero-text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text h1 {
-    font-size: 32px;
-    margin: 0 0 16px 0;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 24px 0;
 }
 
 .hero-description {
     font-size: 16px;
-    line-height: 1.5;
-    color: #444;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #333;
     margin: 0 0 24px 0;
 }
 
 .hero-button {
-    display: inline-block;
-    background-color: #2b7a4b;
+    display: block;
+    margin-top: auto;      /* schiebt den Button ganz nach unten */
+    align-self: center;    /* horizontal mittig */
+    width: 200px;
+    max-width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #008000;
     color: #fff;
     text-decoration: none;
-    padding: 12px 24px;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .hero-button:hover {
-    background-color: #1e5433;
+    background-color: #006400;
 }
 
+/* ===== Startseite: Lust auf was Neues? ===== */
 
-.neues { 
-    background-color: #eeeeee; 
-    padding: 60px 0; 
-} 
-
-.rezepte { 
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px; 
-    flex-wrap: wrap; 
-} 
-
-.rezept-karte { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    width: 200px; 
-    text-decoration: none; 
-    color: #000; 
-} 
-
-.rezept-karte img { 
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    transition: transform 0.2s, box-shadow 0.2s; 
-} 
-
-.rezept-karte span { 
-    margin-top: 8px; 
-    font-size: 16px; 
-    font-weight: 500; 
+h2 {
+    font-size: 24px;
+    font-weight: 500;
     text-align: center;
-} 
+    margin: 0 0 32px 0;
+}
 
-.rezept-karte:hover img { 
-    transform: scale(1.03); 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
-} 
+.neues {
+    background-color: #eee;
+    padding: 40px 0 80px 0;
+}
 
-.rezept-karte:hover span { 
-    color: #2b7a4b; 
-} 
+.rezepte {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.rezept-karte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-decoration: none;
+    color: #000;
+}
 
-.artikel { 
-    background-color: #fff; 
-    padding: 60px 0; 
-} 
+.rezept-karte img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-.artikel-inhalt { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 40px; 
-} 
+.rezept-karte span {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
 
-.artikel-text { 
-    flex: 1; 
-    text-decoration: none; 
-    color: #333; 
-} 
+.rezept-karte:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
 
-.artikel-text p { 
-    margin: 0; 
-    font-size: 16px; 
-    font-weight: 300; 
-    line-height: 1.5; 
-} 
+.rezept-karte:hover span {
+    color: #008000;
+}
 
-.artikel-text:hover p { 
-    color: #2b7a4b; 
-} 
+/* ===== Startseite: Artikel ===== */
 
-.artikel-bild img { 
-    display: block; 
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    transition: transform 0.2s, box-shadow 0.2s; 
-} 
+.artikel {
+    padding: 40px 0 112px 0;
+}
 
-.artikel-bild:hover img { 
-    transform: scale(1.03); 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
+.artikel-inhalt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.artikel-text {
+    flex: 1;
+    text-decoration: none;
+    color: #333;
+}
+
+.artikel-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.artikel-text:hover p {
+    color: #008000;
+}
+
+.artikel-bild img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 
-
+/* ===== Footer – auf allen Seiten gleich ===== */
+/* Inhalt 920px breit + 20px Rand – genau wie Header und .container */
 .site-footer {
-    background-color: #333030; 
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    padding: 40px 20px 20px 20px;
-    margin-top: 50px;
+    background-color: #333030;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 40px max(20px, calc((100% - 920px) / 2)) 20px;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -246,7 +254,8 @@ h2 {
     margin: 0;
 }
 
-.footer-links, .footer-legal {
+.footer-links,
+.footer-legal {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -254,17 +263,17 @@ h2 {
     margin-bottom: 20px;
 }
 
-.footer-links a, .footer-legal a {
-    color: #ffffff;
+.footer-links a,
+.footer-legal a {
+    color: #fff;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s ease;
 }
 
-.footer-links a:hover, .footer-legal a:hover {
-    color: #5ea134; 
+.footer-links a:hover,
+.footer-legal a:hover {
+    color: #5ea134;
 }
-
 
 .footer-legal {
     flex-direction: row;
@@ -277,54 +286,75 @@ h2 {
 }
 
 .footer-bottom {
-    max-width: 1200px;
-    margin: 20px auto 0 auto;
+    margin: 20px 0 0 0;
     text-align: center;
     font-size: 12px;
     color: #8c8c8c;
 }
 
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-links, .footer-legal {
-        align-items: center;
-    }
+.footer-bottom p {
+    margin: 0;
 }
-
-
 
 
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        align-items: center;
+        height: auto;
+        padding-top: 16px;
+        gap: 16px;
+    }
+
+    .navigation {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
         flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     .hero-image {
         width: 100%;
-        max-height: 250px;
+        height: 250px;
+    }
+
+    .hero-button {
+        margin-top: 8px;
     }
 
     .rezepte {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .artikel-inhalt {
-        flex-direction: column-reverse; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        gap: 20px;
+    }
+
+    .footer-brand {
+        flex: none;
+        min-width: 0;
+    }
+
+    .footer-links {
+        align-items: center;
+        min-width: 0;
+    }
+
+    .footer-legal {
+        justify-content: center;
+        min-width: 0;
     }
 }

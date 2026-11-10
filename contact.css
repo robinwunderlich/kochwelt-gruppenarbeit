@@ -1,66 +1,78 @@
-.personal-info-section {
-  width: 100%;
-  max-width: 450px;
-  background-color: rgb(220, 220, 220, 1);
-  border-radius: 10px;
-  margin: 300px auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+
+.contact-section {
+    padding: 480px 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 28px 0;
+}
+
+.contact-form label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 40px;
+}
+
+.contact-form input {
+    height: 38px;
+}
+
+.contact-form textarea {
+    height: 312px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #008000;
 }
 
 .contact-button {
-  color: white;
-  background-color: #008000;
-  text-decoration: none;
-  font-size: 14px;
-  text-align: center;
-  height: 30px;
-  align-self: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 5px;
-  border-width: 0;
-  margin-top: 30px;
+    align-self: center;
+    width: 180px;
+    height: 38px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.personal-info-section textarea {
-  height: 300px;
-  border-radius: 10px;
-  border-width: 0;
-  resize: none;
+.contact-button:hover {
+    background-color: #006400;
 }
 
-.personal-info-section label {
-  margin-top: 30px;
-}
-
-.personal-info-section h1 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.personal-info-section input {
-  height: 30px;
-  border-radius: 10px;
-  border-width: 0;
-}
 
 @media (max-width: 768px) {
-  .personal-info-section {
-    margin: 120px auto;
-  }
+    .contact-section {
+        padding: 80px 16px;
+    }
 }
-
-@media (max-width: 480px) {
-  .personal-info-section {
-    margin: 40px auto;
-  }
-
-  .contact-section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-

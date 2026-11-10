@@ -1,81 +1,26 @@
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    color: #000;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-.header-inhalt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100px;
-}
-
-.logo {
-    align-self: center;
-}
-
-.logo img {
-    height: 50px;
-    display: block;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover,
-nav a.aktiv {
-    color: green;
-    border-bottom-color: green;
-}
-
+/* ===== Impressum ===== */
+/* Header, Footer und Schrift kommen aus style.css */
 
 .impressum {
-    padding: 60px 0 100px 0;
+    padding-top: 64px;
+    padding-bottom: 120px;
 }
 
 .impressum h1 {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     margin: 0 0 32px 0;
 }
 
 .impressum h2 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+    text-align: left;
     margin: 32px 0 8px 0;
 }
 
 .impressum p {
-    margin: 0;
+    margin: 0 0 8px 0;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -83,7 +28,7 @@ nav a.aktiv {
 }
 
 .impressum a {
-    color: green;
+    color: #008000;
     text-decoration: none;
 }
 
@@ -91,25 +36,13 @@ nav a.aktiv {
     text-decoration: underline;
 }
 
-/* ===== Footer ===== */
-footer {
-    background-color: #3f3b3b;
-    height: 300px;
-}
-
-/* ===== Handy-Ansicht ===== */
-@media (max-width: 700px) {
-    .header-inhalt {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 16px 20px 0 20px;
-        gap: 16px;
+@media (max-width: 768px) {
+    .impressum {
+        padding-top: 32px;
+        padding-bottom: 64px;
     }
 
-    nav {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .impressum h1 {
+        font-size: 26px;
     }
 }
