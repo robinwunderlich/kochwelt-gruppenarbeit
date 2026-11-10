@@ -9,7 +9,6 @@ body {
     background-color: #fff;
 }
 
-/* Buttons und Eingabefelder nutzen sonst die Systemschrift */
 button,
 input,
 textarea {
@@ -108,9 +107,9 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: flex-start;   /* links unter dem Text – wie im Mockup */
-    margin-top: auto;         /* nach unten schieben ...                     */
-    margin-bottom: 36px;      /* ... aber 36px über der Bildkante – wie im Mockup */
+    align-self: flex-start;   
+    margin-top: auto;         
+    margin-bottom: 36px;      
     width: 200px;
     height: 40px;
     background-color: #008000;
@@ -124,7 +123,7 @@ textarea {
     background-color: #1e5433;
 }
 
-/* ===== Überschriften der Startseite: mittig ===== */
+
 
 .neues h2,
 .artikel h2 {
