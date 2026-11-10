@@ -1,105 +1,127 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="rezept-robin.css" />
-  </head>
 
-  <body>
-    <header class="main-header">
-      <img src="img/logo.png" alt="Logo" class="logo-img" />
-      <nav class="navigation">
-        <a href="#" class="nav-link">Start</a>
-        <a href="#" class="nav-link">Rezept des Tages</a>
-        <a href="#" class="nav-link">Kontakt</a>
-        <a href="#" class="nav-link">Impressum</a>
-      </nav>
-    </header>
-    <main>
-      <section class="recipe-section container">
-        <h1>Quinoa Chicken Bowl</h1>
-        <img
-          class="recipe-image"
-          alt="Quinoa Chicken Bowl"
-          src="./img/quinoa-bowl.jpg"
-        />
-        <div class="info-recipe">
-          <p class="recipe-info-item">
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            30 Min.
-          </p>
-          <p class="recipe-info-item">
-            <img src="./img/icons/brain-solid.svg" alt="" />
-            simpel
-          </p>
-          <p class="recipe-info-item">
-            <img src="./img/icons/calendar-alt-regular.svg" alt="" />
-            03.11.2026
-          </p>
-        </div>
-        <hr />
-      </section>
-      <section class="all-ingredients container">
-        <div class="portions">
-          <p>Zutaten für</p>
-          <input type="number" valuer="" />
-          <button class="recipe-button">Portionen</button>
-        </div>
-        <ul class="ingredients-list">
-          <li>500 g Hähnchenbrustfilet</li>
-          <li>200 g Quinoa</li>
-          <li>1 Dose Kichererbsen (400 g)</li>
-          <li>250 g Kirschtomaten</li>
-          <li>1 Salatgurke</li>
-          <li>1 rote Zwiebel</li>
-          <li>150 g Feta</li>
-          <li>300 g griechischer Joghurt</li>
-          <li>1 Zitrone</li>
-          <li>2 EL Olivenöl</li>
-          <li>Salz, Pfeffer und Paprikapulver</li>
-        </ul>
-      </section>
-      <section class="recipe-preparation container">
-        <h2>Zubereitung</h2>
-        <div class="info-recipe">
-          <p class="recipe-info-item">
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            ca. 30 Min.
-          </p>
-          <p class="recipe-info-item">
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            Gesamtzeit ca. 30 Min.
-          </p>
-        </div>
-        <p>
-          Quinoa in einem Sieb abspülen und in doppelter Menge Salzwasser etwa
-          15 Minuten köcheln lassen. Hähnchen in Streifen schneiden, mit Salz,
-          Pfeffer und Paprikapulver würzen und in Olivenöl rundherum goldbraun
-          braten. Kichererbsen abspülen und abtropfen lassen. Tomaten halbieren,
-          Gurke würfeln und Zwiebel in feine Ringe schneiden. Für den Dip den
-          Joghurt mit dem Saft einer halben Zitrone, Salz und Pfeffer verrühren.
-          Quinoa auf Schüsseln verteilen, Gemüse, Kichererbsen und Hähnchen
-          darauf anrichten, Feta darüberbröseln und mit Joghurt-Dip und
-          Zitronenspalten servieren.
-        </p>
-        <h3>Rezept erstellt von</h3>
-        <div class="creator">
-          <img src="./img/profile.png" alt="" />
-          <p>Robin</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>AGB&Datenschutz</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quinoa Chicken Bowl - Kochwelt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="rezept-robin.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Kochwelt Logo" class="logo-img" />
+    </a>
+    <nav class="navigation">
+       <a href="./index.html" class="nav-link">Start</a>
+      <a href="./rezept-robin.html" class="nav-link active">Rezept des Tages</a>
+      <a href="./contact.html" class="nav-link">Kontakt</a>
+      <a href="./Impressum.html" class="nav-link">Impressum</a>
+    </nav>
+  </header>
+
+  <main class="recipe container">
+    <h1>Quinoa Chicken Bowl</h1>
+    <img class="recipe-image" src="img/quinoa-bowl.jpg" alt="Quinoa Chicken Bowl" />
+
+    <div class="info-recipe">
+      <p class="recipe-info-item">
+        <img src="img/icons/clock-regular.svg" alt="" />
+        30 Min.
+      </p>
+      <p class="recipe-info-item">
+        <img src="img/icons/brain-solid.svg" alt="" />
+        simpel
+      </p>
+      <p class="recipe-info-item">
+        <img src="img/icons/calendar-alt-regular.svg" alt="" />
+        03.11.2026
+      </p>
+    </div>
+
+    <hr />
+
+    <form class="portions" onsubmit="return false;">
+      <label for="portions">Zutaten für</label>
+      <input type="number" id="portions" value="4" min="1" />
+      <button type="submit" class="recipe-button">Portionen</button>
+    </form>
+
+    <ul class="ingredients-list">
+      <li>500 g Hähnchenbrustfilet</li>
+      <li>200 g Quinoa</li>
+      <li>1 Dose Kichererbsen (400 g)</li>
+      <li>250 g Kirschtomaten</li>
+      <li>1 Salatgurke</li>
+      <li>1 rote Zwiebel</li>
+      <li>150 g Feta</li>
+      <li>300 g griechischer Joghurt</li>
+      <li>1 Zitrone</li>
+      <li>2 EL Olivenöl</li>
+      <li>Salz, Pfeffer und Paprikapulver</li>
+    </ul>
+
+    <h2>Zubereitung</h2>
+
+    <div class="info-recipe">
+      <p class="recipe-info-item">
+        <img src="img/icons/clock-regular.svg" alt="" />
+        ca. 30 Min.
+      </p>
+      <p class="recipe-info-item">
+        <img src="img/icons/clock-regular.svg" alt="" />
+        Gesamtzeit ca. 30 Min.
+      </p>
+    </div>
+
+    <p class="preparation">
+      Quinoa in einem Sieb abspülen und in doppelter Menge Salzwasser etwa
+      15 Minuten köcheln lassen. Hähnchen in Streifen schneiden, mit Salz,
+      Pfeffer und Paprikapulver würzen und in Olivenöl rundherum goldbraun
+      braten. Kichererbsen abspülen und abtropfen lassen. Tomaten halbieren,
+      Gurke würfeln und Zwiebel in feine Ringe schneiden. Für den Dip den
+      Joghurt mit dem Saft einer halben Zitrone, Salz und Pfeffer verrühren.
+      Quinoa auf Schüsseln verteilen, Gemüse, Kichererbsen und Hähnchen
+      darauf anrichten, Feta darüberbröseln und mit Joghurt-Dip und
+      Zitronenspalten servieren.
+    </p>
+
+    <h3>Rezept erstellt von</h3>
+    <div class="creator">
+      <img src="img/profile.png" alt="Profilbild" />
+      <span>Robin</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Kochwelt</span>
+        <p>Dein Magazin für Rezepte und Kochtipps.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./index.html">Start</a>
+        <a href="./rezept-robin.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./Impressum.html">Impressum</a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="#">AGB</a>
+        <span class="separator">|</span>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kochwelt. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
