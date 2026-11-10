@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -30,7 +29,7 @@ body {
 }
 
 .logo-link,
-.main-header > .logo-img {
+.main-header>.logo-img {
     align-self: center;
 }
 
@@ -59,7 +58,6 @@ body {
     color: #008000;
     border-bottom-color: #008000;
 }
-
 
 
 .hero {
@@ -98,10 +96,16 @@ body {
     margin: 0 0 24px 0;
 }
 
+
+
+.hero-button:hover {
+    background-color: #006400;
+}
+
 .hero-button {
     display: block;
-    margin-top: auto;      
-    align-self: center;    
+    margin-top: 36px;
+    align-self: flex-start;
     width: 200px;
     max-width: 100%;
     height: 40px;
@@ -114,12 +118,6 @@ body {
     font-weight: 500;
     font-size: 16px;
 }
-
-.hero-button:hover {
-    background-color: #006400;
-}
-
-
 
 h2 {
     font-size: 24px;
@@ -317,7 +315,18 @@ h2 {
     }
 
     .hero-button {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .hero-button {
         margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .rezepte {

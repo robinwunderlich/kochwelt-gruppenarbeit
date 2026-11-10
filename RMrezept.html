@@ -1,132 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ćevapčići mit Kajmak - Kochwelt</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="RMstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ćevapčići mit Kajmak - Kochwelt</title>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="rezept-robin.css" />
 </head>
 
 <body>
-
-    <header class="main-header">
-      <a href="index.html" class="logo-link">
-        <img src="img/logo.png" alt="Kochwelt Logo" class="logo-img" />
-      </a>
-      <nav class="navigation">
-       <a href="./index.html" class="nav-link">Start</a>
-      <a href="./rezept-robin.html" class="nav-link">Rezept des Tages</a>
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Kochwelt Logo" class="logo-img" />
+    </a>
+    <nav class="navigation">
+      <a href="./index.html" class="nav-link">Start</a>
+      <a href="./rezept-robin.html" class="nav-link active">Rezept des Tages</a>
       <a href="./contact.html" class="nav-link">Kontakt</a>
       <a href="./Impressum.html" class="nav-link">Impressum</a>
-      </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main class="recipe container">
+  <main class="recipe container">
+    <h1>Ćevapčići mit Kajmak</h1>
+    <img class="recipe-image" src="./img/cevapcici.jpeg" alt="Ćevapčići mit Kajmak" />
 
-        <h1>Ćevapčići mit Kajmak</h1>
+    <div class="info-recipe">
+      <p class="recipe-info-item">
+        <img src="img/icons/clock-regular.svg" alt="" />
+        45 Min.
+      </p>
+      <p class="recipe-info-item">
+        <img src="img/icons/brain-solid.svg" alt="" />
+        normal
+      </p>
+      <p class="recipe-info-item">
+        <img src="img/icons/calendar-alt-regular.svg" alt="" />
+        04.11.2026
+      </p>
+    </div>
 
-        <img class="recipe-img" src="img/cevapcici.jpeg" alt="Ćevapčići mit Kajmak und Fladenbrot">
+    <hr />
 
-        <div class="info-box-container">
-            <div class="info-box">
-                <img src="img/icons/clock-regular.svg" alt="">
-                <span>45 Min.</span>
-            </div>
-            <div class="info-box">
-                <img src="img/icons/brain-solid.svg" alt="">
-                <span>normal</span>
-            </div>
-            <div class="info-box">
-                <img src="img/icons/calendar-alt-regular.svg" alt="">
-                <span>04.11.2026</span>
-            </div>
-        </div>
+    <form class="portions" onsubmit="return false;">
+      <label for="portions">Zutaten für</label>
+      <input type="number" id="portions" value="4" min="1" />
+      <button type="submit" class="recipe-button">Portionen</button>
+    </form>
 
-        <hr>
+    <ul class="ingredients-list">
+      <li>500 g Rinderhackfleisch</li>
+      <li>250 g Lammhackfleisch</li>
+      <li>1 Zwiebel(n), fein gerieben</li>
+      <li>3 Knoblauchzehe(n)</li>
+      <li>1 TL Natron</li>
+      <li>50 ml Mineralwasser</li>
+      <li>1 TL Paprikapulver, edelsüß</li>
+      <li>Salz und Pfeffer</li>
+      <li>200 g Kajmak</li>
+      <li>4 Fladenbrot(e) (Lepinja)</li>
+    </ul>
 
-        <form class="portions" onsubmit="return false;">
-            <label for="portions">Zutaten für</label>
-            <input type="number" id="portions" value="4" min="1">
-            <button type="submit">Portionen</button>
-        </form>
-
-        <table class="ingredients">
-            <tr><td>500 g Rinderhackfleisch</td></tr>
-            <tr><td>250 g Lammhackfleisch</td></tr>
-            <tr><td>1 Zwiebel(n), fein gerieben</td></tr>
-            <tr><td>3 Knoblauchzehe(n)</td></tr>
-            <tr><td>1 TL Natron</td></tr>
-            <tr><td>50 ml Mineralwasser</td></tr>
-            <tr><td>1 TL Paprikapulver, edelsüß</td></tr>
-            <tr><td>Salz und Pfeffer</td></tr>
-            <tr><td>200 g Kajmak</td></tr>
-            <tr><td>4 Fladenbrot(e) (Lepinja)</td></tr>
-        </table>
-
-        <h2>Zubereitung</h2>
-
-        <div class="info-box-container small-gap">
-            <div class="info-box">
-                <img src="img/icons/clock-regular.svg" alt="">
-                <span>ca. 25 Minuten</span>
-            </div>
-            <div class="info-box">
-                <img src="img/icons/clock-regular.svg" alt="">
-                <span>Gesamtzeit ca. 45 Minuten</span>
-            </div>
-        </div>
-
-        <p class="preparation">
-            Rinder- und Lammhack in eine Schüssel geben. Zwiebel fein reiben, Knoblauch pressen und beides
-            zum Fleisch geben. Natron im Mineralwasser auflösen, zusammen mit Paprikapulver, Salz und Pfeffer
-            dazugeben und alles mindestens 5 Minuten kräftig kneten, bis die Masse geschmeidig ist. Abgedeckt
-            ca. 20 Minuten im Kühlschrank ruhen lassen. Mit feuchten Händen fingerdicke Röllchen von ca. 8 cm
-            Länge formen. Grill oder Grillpfanne stark erhitzen und die Ćevapčići rundherum 8-10 Minuten
-            braten, bis sie schön gebräunt sind. Das Fladenbrot kurz mit auf den Grill legen. Ćevapčići mit
-            Kajmak, frischen Zwiebeln und warmem Fladenbrot servieren.
+    <section class="preparation">
+      <h2>Zubereitung</h2>
+      <div class="info-recipe">
+        <p class="recipe-info-item">
+          <img src="img/icons/clock-regular.svg" alt="" />
+          ca. 25 Minuten
         </p>
-
-        <h3>Rezept erstellt von</h3>
-
-        <div class="author">
-            <img src="img/profile.png" alt="Profilbild">
-            <span>Robert M.</span>
-        </div>
-
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <span class="footer-logo-text">Kochwelt</span>
-          <p>Dein Magazin für Rezepte und Kochtipps.</p>
-        </div>
-
-        <div class="footer-links">
-           <a href="./index.html">Start</a>
-      <a href="./rezept-robin.html">Rezept des Tages</a>
-      <a href="./contact.html">Kontakt</a>
-      <a href="./Impressum.html">Impressum</a>
-        </div>
-
-        <div class="footer-legal">
-          <a href="#">AGB</a>
-          <span class="separator">|</span>
-          <a href="#">Datenschutz</a>
-        </div>
+        <p class="recipe-info-item">
+          <img src="img/icons/clock-regular.svg" alt="" />
+          Gesamtzeit ca. 45 Minuten
+        </p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Kochwelt. Alle Rechte vorbehalten.</p>
-      </div>
-    </footer>
+      <p class="preparation-text">
+        Rinder- und Lammhack in eine Schüssel geben. Zwiebel fein reiben, Knoblauch pressen und beides zum Fleisch geben.
+        Natron im Mineralwasser auflösen, zusammen mit Paprikapulver, Salz und Pfeffer dazugeben und alles mindestens 5 Minuten
+        kräftig kneten, bis die Masse geschmeidig ist. Abgedeckt ca. 20 Minuten im Kühlschrank ruhen lassen. Mit feuchten Händen
+        fingerdicke Röllchen von ca. 8 cm Länge formen. Grill oder Grillpfanne stark erhitzen und die Ćevapčići rundherum 8-10
+        Minuten braten, bis sie schön gebräunt sind. Das Fladenbrot kurz mit auf den Grill legen. Ćevapčići mit Kajmak, frischen
+        Zwiebeln und warmem Fladenbrot servieren.
+      </p>
+    </section>
 
+    
+      <h3>Rezept erstellt von</h3>
+    <div class="creator">
+      <img src="img/profile.png" alt="Profilbild" />
+      <span>Robert M.</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Kochwelt</span>
+        <p>Dein Magazin für Rezepte und Kochtipps.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./index.html">Start</a>
+        <a href="./rezept-robin.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./Impressum.html">Impressum</a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="#">AGB</a>
+        <span class="separator">|</span>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kochwelt. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+    
+  </main>
 </body>
 
 </html>
