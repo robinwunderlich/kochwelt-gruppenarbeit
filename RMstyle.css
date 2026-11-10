@@ -61,7 +61,7 @@
 
 .portions {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 12px;
 }
@@ -71,10 +71,14 @@
     font-weight: 300;
     color: #333;
     margin-right: 18px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .portions input {
+    flex: 0 1 166px;
     width: 166px;
+    min-width: 56px;
     height: 40px;
     border: 1px solid #eee;
     border-right: none;
@@ -85,6 +89,7 @@
 }
 
 .recipe-button {
+    flex-shrink: 0;
     width: 150px;
     height: 40px;
     border: none;
@@ -169,6 +174,16 @@
 
 
 
+@media (max-width: 420px) {
+    .portions label {
+        margin-right: 12px;
+    }
+
+    .recipe-button {
+        width: 120px;
+    }
+}
+
 @media (max-width: 768px) {
     .recipe {
         padding-top: 32px;
@@ -187,23 +202,6 @@
         margin-top: 40px;
     }
 
-    .portions {
-        gap: 8px 0;
-    }
-
-    .portions label {
-        width: 100%;
-    }
-
-    .portions input {
-        flex: 1;
-        width: auto;
-        min-width: 0;
-    }
-
-    .recipe-button {
-        width: 130px;
-    }
 
     .ingredients-list li {
         padding: 12px 16px;
