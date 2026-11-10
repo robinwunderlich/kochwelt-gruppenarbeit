@@ -1,4 +1,4 @@
-/* ===== Rezeptseite – Aufbau wie Rezept.png ===== */
+
 
 .recipe {
     padding-top: 64px;
@@ -20,7 +20,7 @@
     border-radius: 8px;
 }
 
-/* Info-Kästchen (Zeit, Schwierigkeit, Datum) */
+
 
 .info-recipe {
     display: flex;
@@ -58,7 +58,7 @@
     margin: 64px 0 12px 0;
 }
 
-/* Zutaten für [4] Portionen */
+
 
 .portions {
     display: flex;
@@ -101,7 +101,7 @@
     background-color: #006400;
 }
 
-/* Zutatenliste */
+
 
 .ingredients-list {
     list-style: none;
@@ -124,7 +124,7 @@
     border-radius: 8px;
 }
 
-/* Zubereitung */
+
 
 .recipe h2 {
     font-size: 24px;
@@ -141,7 +141,7 @@
     margin: 32px 0 0 0;
 }
 
-/* Rezept erstellt von */
+
 
 .recipe h3 {
     font-size: 18px;
@@ -168,7 +168,7 @@
     font-weight: 300;
 }
 
-/* ===== Handy-Ansicht ===== */
+
 
 @media (max-width: 768px) {
     .recipe {
@@ -215,9 +215,7 @@
     }
 }
 
-/* ===== Extras für Juliens Lasagne ===== */
 
-/* Zwischenüberschriften bei den Zutaten */
 .ingredients-title {
     font-size: 16px;
     font-weight: 600;
@@ -228,7 +226,7 @@
     margin-top: 20px;
 }
 
-/* Zwischenüberschriften bei der Zubereitung */
+
 .step-title {
     font-size: 16px;
     font-weight: 600;
@@ -239,7 +237,7 @@
     margin-top: 8px;
 }
 
-/* Tipp-Kasten */
+
 .tip {
     margin-top: 32px;
     padding: 16px 20px;

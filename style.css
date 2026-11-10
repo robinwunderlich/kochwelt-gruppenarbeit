@@ -1,7 +1,3 @@
-/* =========================================
-   Kochwelt – gemeinsames Stylesheet
-   (Header, Footer, Startseite)
-   ========================================= */
 
 * {
     box-sizing: border-box;
@@ -20,9 +16,7 @@ body {
     padding: 0 20px;
 }
 
-/* ===== Header ===== */
 
-/* Inhalt 920px breit + 20px Rand – genau wie .container */
 .main-header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -66,7 +60,7 @@ body {
     border-bottom-color: #008000;
 }
 
-/* ===== Startseite: Hero ===== */
+
 
 .hero {
     display: flex;
@@ -106,8 +100,8 @@ body {
 
 .hero-button {
     display: block;
-    margin-top: auto;      /* schiebt den Button ganz nach unten */
-    align-self: center;    /* horizontal mittig */
+    margin-top: auto;      
+    align-self: center;    
     width: 200px;
     max-width: 100%;
     height: 40px;
@@ -125,7 +119,7 @@ body {
     background-color: #006400;
 }
 
-/* ===== Startseite: Lust auf was Neues? ===== */
+
 
 h2 {
     font-size: 24px;
@@ -178,7 +172,7 @@ h2 {
     color: #008000;
 }
 
-/* ===== Startseite: Artikel ===== */
+
 
 .artikel {
     padding: 40px 0 112px 0;
@@ -217,8 +211,7 @@ h2 {
 }
 
 
-/* ===== Footer – auf allen Seiten gleich ===== */
-/* Inhalt 920px breit + 20px Rand – genau wie Header und .container */
+
 .site-footer {
     background-color: #333030;
     color: #fff;
